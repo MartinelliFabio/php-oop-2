@@ -2,8 +2,11 @@
   class Categoria {
     private String $species;
 
-    function __construct(String $_species) {
+    private String $iconCategory;
+
+    function __construct(String $_species, String $_iconCategory) {
         $this->setSpecies($_species);
+        $this->setIconCategory($_iconCategory);
     }
 
     // Getter and Setter of species
@@ -16,6 +19,20 @@
             $this->species = $_species;
         } else {
             $this->species = 'Alien'; 
+        }
+        return $this;
+    }
+
+    // Getter and Setter of icon of category
+    public function getIconCategory() {
+        return $this->iconCategory;
+    }
+
+    public function setIconCategory($_iconCategory) {
+        if(strlen($_iconCategory)) {
+            $this->iconCategory = $_iconCategory;
+        } else {
+            $this->iconCategory = 'default.png'; 
         }
         return $this;
     }

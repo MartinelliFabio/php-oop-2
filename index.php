@@ -5,10 +5,10 @@ include_once __DIR__ . '/Models/Gioco.php';
 include_once __DIR__ . '/Models/Cuccia.php';
 
 
-$categoryCane = new Categoria('Cane');
+$categoryCane = new Categoria('Cane', 'iconcane.png');
 var_dump($categoryCane);
 
-$categoryGatto = new Categoria('Gatto');
+$categoryGatto = new Categoria('Gatto', 'icongatto.png');
 var_dump($categoryGatto);
 
 // $product = new Prodotto('Mangime Cane', 'imgcane.png', 25.55, $categoryCane);
