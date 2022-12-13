@@ -5,8 +5,6 @@ include_once __DIR__ . '/Models/Gioco.php';
 include_once __DIR__ . '/Models/Cuccia.php';
 
 
-
-
 $categoryCane = new Categoria('Cane');
 var_dump($categoryCane);
 
@@ -16,10 +14,10 @@ var_dump($categoryGatto);
 // $product = new Prodotto('Mangime Cane', 'imgcane.png', 25.55, $categoryCane);
 // var_dump($product);
 
-$ciboCane = new Cibo('Scatoletta', 'imgcane.png', 25.55, $categoryCane, '01/01/2023', 10, ['Maiale', 'Pollo', 'Vitello']);
+$ciboCane = new Cibo('Scatoletta', 'imgcane.png', 25.55, $categoryCane, 10, ['Maiale', 'Pollo', 'Vitello'], '2022-12-30');
 var_dump($ciboCane);
 
-$ciboGatto = new Cibo('Croccantini', 'imggatto.png', -5, $categoryGatto, '01/01/2023', 5, ['Verdure', 'Pesce']);
+$ciboGatto = new Cibo('Croccantini', 'imggatto.png', -5, $categoryGatto, 5, [], '2022-10-25');
 var_dump($ciboGatto);
 
 $giocoCane = new Gioco('Pallina di gomma', 'imgpallina.png', 10.20, $categoryCane, '10x10', ['gomma']);
