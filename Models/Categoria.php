@@ -12,7 +12,11 @@
     }
 
     public function setSpecies($_species) {
-        $this->species = $_species;
+        if(strlen($_species)) {
+            $this->species = $_species;
+        } else {
+            $this->species = 'Alien'; 
+        }
         return $this;
     }
   }
