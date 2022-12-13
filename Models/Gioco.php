@@ -17,7 +17,11 @@ include_once __DIR__ . '/Prodotto.php';
     }
 
     public function setSize($_size){
-        $this->size = $_size;
+        if(strlen($_size)) {
+            $this->size = $_size;
+        } else {
+            $this->size = "0x0"; 
+        }
         return $this;
     }
 
@@ -27,7 +31,11 @@ include_once __DIR__ . '/Prodotto.php';
     }
 
     public function setMaterials($_materials){
-        $this->materials = $_materials;
+        if(count($_materials)) {
+            $this->materials = $_materials;
+        } else {
+            $this->materials = ["Not Available"]; 
+        }
         return $this;
     }
   }

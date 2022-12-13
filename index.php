@@ -20,7 +20,7 @@ var_dump($ciboCane);
 $ciboGatto = new Cibo('Croccantini', 'imggatto.png', -5, $categoryGatto, 5, [], '2022-10-25');
 var_dump($ciboGatto);
 
-$giocoCane = new Gioco('Pallina di gomma', 'imgpallina.png', 10.20, $categoryCane, '10x10', ['gomma']);
+$giocoCane = new Gioco('Pallina di gomma', 'imgpallina.png', 10.20, $categoryCane, '', []);
 var_dump($giocoCane);
 
 $cucciaCane = new Cuccia('Casetta di legno', 'imgcasetta.png', 35.99, $categoryCane, 'Outdoor', 'large', ['legno', 'ferro']);
