@@ -1,7 +1,6 @@
 <?php
   class Categoria {
     private String $species;
-
     private String $iconCategory;
 
     function __construct(String $_species, String $_iconCategory) {

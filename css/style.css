@@ -1,0 +1,28 @@
+nav {
+    height: 70px;
+    background-color: #001632;
+    color: white;
+}
+
+main {
+    padding-top: 80px;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+
+.card {
+    height: 100%;
+}
+
+.icon {
+    width: 30px;
+}
+
+.margin {
+    margin: 30px auto;
+}

@@ -5,47 +5,38 @@ include_once __DIR__ . '/Models/Gioco.php';
 include_once __DIR__ . '/Models/Cuccia.php';
 
 
-$categoryCane = new Categoria('Cane', 'iconcane.png');
-var_dump($categoryCane);
+$categoryCane = new Categoria('Cane', 'dog.png');
+// var_dump($categoryCane);
 
-$categoryGatto = new Categoria('Gatto', 'icongatto.png');
-var_dump($categoryGatto);
+$categoryGatto = new Categoria('Gatto', 'cat.png');
+// var_dump($categoryGatto);
 
 // $product = new Prodotto('Mangime Cane', 'imgcane.png', 25.55, $categoryCane);
 // var_dump($product);
 
-$ciboCane = new Cibo('Scatoletta', 'imgcane.png', 25.55, $categoryCane, 10, ['Maiale', 'Pollo', 'Vitello'], '2022-12-30');
-var_dump($ciboCane);
+$ciboCane = new Cibo('Croccantini Happy Dog', 'dogfood.jpg', 25.55, $categoryCane, 10, ['Maiale - ', 'Pollo - ', 'Vitello '], '2022-12-30');
+// var_dump($ciboCane);
 
-$ciboGatto = new Cibo('Croccantini', 'imggatto.png', -5, $categoryGatto, 5, [], '2022-10-25');
-var_dump($ciboGatto);
+$ciboGatto = new Cibo('Croccantini', 'cat-food.png', -5, $categoryGatto, 5, ['Salmone - ', 'Verdure - ', 'Fibre - ', 'Molluschi'], '2022-10-25');
+// var_dump($ciboGatto);
 
-$giocoCane = new Gioco('Pallina di gomma', 'imgpallina.png', 10.20, $categoryCane, '', []);
-var_dump($giocoCane);
+$giocoCane = new Gioco('Osso di gomma', 'dog-toy.jpg', 10.20, $categoryCane, 'L 30 x P 9 x H 4.5', ['Plastica - ', 'Caucciù ']);
+// var_dump($giocoCane);
 
-$cucciaCane = new Cuccia('Casetta di legno', 'imgcasetta.png', 35.99, $categoryCane, '', '', []);
-var_dump($cucciaCane);
+$giocoGatto = new Gioco('Cannetta con topo', 'cat-toy.jpg', 3.20, $categoryGatto, '50', ['Plastica - ', 'Gomma - ', 'Tessuto']);
+// var_dump($giocoGatto);
 
-$cucciaGatto = new Cuccia('Cuscino', 'imgcuscino.png', 15.50, $categoryGatto, 'Outdoor', 'small', ['stoffa, cotone']);
-var_dump($cucciaGatto);
+$cucciaCane = new Cuccia('Casetta di legno', 'cuccia-cane.jpg', 35.99, $categoryCane, 'Outdoor', 'L 132 x P 85 x H 86', ['Legno di abete rosso - ', 'Bitume - ', 'Ferro ']);
+// var_dump($cucciaCane);
+
+$cucciaGatto = new Cuccia('Tiragraffi Modern Living Havana', 'cuccia-gatto.jpg', 120.50, $categoryGatto, 'Indoor', 'Big', ['Velcro - ', 'Legno - ', 'Plastica - ', 'Sisal - ', 'Imbottito']);
+// var_dump($cucciaGatto);
+
+
+include __DIR__ . '/partials/header.php';
+include __DIR__ . '/partials/main.php';
+include __DIR__ . '/partials/footer.php';
 
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.41/dist/vue.global.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Php - Oop 2</title>
-</head>
-<body>
-
-
-</body>
-</html>
