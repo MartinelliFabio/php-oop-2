@@ -1,6 +1,8 @@
 <?php
 include_once __DIR__ . '/Models/Prodotto.php';
 include_once __DIR__ . '/Models/Cibo.php';
+include_once __DIR__ . '/Models/Gioco.php';
+
 
 
 $categoryCane = new Categoria('Cane');
@@ -17,6 +19,10 @@ var_dump($ciboCane);
 
 $ciboGatto = new Cibo('Croccantini', 'imggatto.png', 20.10, $categoryGatto, '01/01/2023', 5, ['Verdure', 'Pesce']);
 var_dump($ciboCane);
+
+$giocoCane = new Gioco('Pallina di gomma', 'imgpallina.png', 10.20, $categoryCane, '10x10', ['gomma']);
+var_dump($giocoCane);
+
 
 ?>
 
