@@ -15,38 +15,44 @@ include_once __DIR__ . '/Prodotto.php';
 
 
     // Getter and Setter of where
-    public function getWhere()
-    {
+    public function getWhere() {
         return $this->where;
     }
 
-    public function setWhere($where)
-    {
-        $this->where = $where;
+    public function setWhere($_where) {
+        if(strlen($_where)) {
+            $this->where = $_where;
+        } else {
+            $this->where = "No where"; 
+        }
         return $this;
     }
 
     // Getter and Setter of materials
-    public function getMaterials()
-    {
+    public function getMaterials() {
         return $this->materials;
     }
 
-    public function setMaterials($materials)
-    {
-        $this->materials = $materials;
+    public function setMaterials($_materials) {
+        if(count($_materials)) {
+            $this->materials = $_materials;
+        } else {
+            $this->materials = ["Not Available"]; 
+        }
         return $this;
     }
 
     // Getter and Setter of size
-    public function getSize()
-    {
+    public function getSize() {
         return $this->size;
     }
 
-    public function setSize($size)
-    {
-        $this->size = $size;
+    public function setSize($_size) {
+        if(strlen($_size)) {
+            $this->size = $_size;
+        } else {
+            $this->size = "0x0"; 
+        }
         return $this;
     }
   }

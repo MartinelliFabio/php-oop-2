@@ -12,11 +12,11 @@ include_once __DIR__ . '/Prodotto.php';
     }
 
     // Getter and Setter of size
-    public function getSize(){
+    public function getSize() {
         return $this->size;
     }
 
-    public function setSize($_size){
+    public function setSize($_size) {
         if(strlen($_size)) {
             $this->size = $_size;
         } else {
@@ -26,11 +26,11 @@ include_once __DIR__ . '/Prodotto.php';
     }
 
     // Getter and Setter of materials
-    public function getMaterials(){
+    public function getMaterials() {
         return $this->materials;
     }
 
-    public function setMaterials($_materials){
+    public function setMaterials($_materials) {
         if(count($_materials)) {
             $this->materials = $_materials;
         } else {

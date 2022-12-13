@@ -23,8 +23,11 @@ var_dump($ciboGatto);
 $giocoCane = new Gioco('Pallina di gomma', 'imgpallina.png', 10.20, $categoryCane, '', []);
 var_dump($giocoCane);
 
-$cucciaCane = new Cuccia('Casetta di legno', 'imgcasetta.png', 35.99, $categoryCane, 'Outdoor', 'large', ['legno', 'ferro']);
+$cucciaCane = new Cuccia('Casetta di legno', 'imgcasetta.png', 35.99, $categoryCane, '', '', []);
 var_dump($cucciaCane);
+
+$cucciaGatto = new Cuccia('Cuscino', 'imgcuscino.png', 15.50, $categoryGatto, 'Outdoor', 'small', ['stoffa, cotone']);
+var_dump($cucciaGatto);
 
 
 ?>
