@@ -3,9 +3,9 @@ include_once __DIR__ . '/Categoria.php';
 
 class Prodotto {
 
-    private String $title;
-    private String $image;
-    private Float $price;
+    protected String $title;
+    protected String $image;
+    protected Float $price;
     public Categoria $category;
 
     function __construct(String $_title, String $_image, Float $_price, Categoria $_category) {

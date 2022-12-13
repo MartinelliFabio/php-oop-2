@@ -1,5 +1,7 @@
 <?php
-include_once __DIR__ . './Models/Prodotto.php';
+include_once __DIR__ . '/Models/Prodotto.php';
+include_once __DIR__ . '/Models/Cibo.php';
+
 
 $categoryCane = new Categoria('Cane');
 var_dump($categoryCane);
@@ -7,9 +9,14 @@ var_dump($categoryCane);
 $categoryGatto = new Categoria('Gatto');
 var_dump($categoryGatto);
 
-$product = new Prodotto('Mangime Cane', 'imgcane.png', 25.55, $categoryCane);
-var_dump($product);
+// $product = new Prodotto('Mangime Cane', 'imgcane.png', 25.55, $categoryCane);
+// var_dump($product);
 
+$ciboCane = new Cibo('Scatoletta', 'imgcane.png', 25.55, $categoryCane, '01/01/2023', 10, ['Maiale', 'Pollo', 'Vitello']);
+var_dump($ciboCane);
+
+$ciboGatto = new Cibo('Croccantini', 'imggatto.png', 20.10, $categoryGatto, '01/01/2023', 5, ['Verdure', 'Pesce']);
+var_dump($ciboCane);
 
 ?>
 
