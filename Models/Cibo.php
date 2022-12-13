@@ -1,4 +1,5 @@
 <?php
+include_once __DIR__ . '/Prodotto.php';
 class Cibo extends Prodotto {
     private String $expirationDate;
     private Int $weight;

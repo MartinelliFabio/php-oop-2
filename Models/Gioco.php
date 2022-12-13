@@ -1,4 +1,6 @@
 <?php
+include_once __DIR__ . '/Prodotto.php';
+
   class Gioco extends Prodotto{
     private String $size;
     private Array $materials;

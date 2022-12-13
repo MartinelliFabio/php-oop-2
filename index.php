@@ -2,6 +2,8 @@
 include_once __DIR__ . '/Models/Prodotto.php';
 include_once __DIR__ . '/Models/Cibo.php';
 include_once __DIR__ . '/Models/Gioco.php';
+include_once __DIR__ . '/Models/Cuccia.php';
+
 
 
 
@@ -22,6 +24,9 @@ var_dump($ciboCane);
 
 $giocoCane = new Gioco('Pallina di gomma', 'imgpallina.png', 10.20, $categoryCane, '10x10', ['gomma']);
 var_dump($giocoCane);
+
+$cucciaCane = new Cuccia('Casetta di legno', 'imgcasetta.png', 35.99, $categoryCane, 'Outdoor', 'large', ['legno', 'ferro']);
+var_dump($cucciaCane);
 
 
 ?>
