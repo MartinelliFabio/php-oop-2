@@ -19,8 +19,8 @@ var_dump($categoryGatto);
 $ciboCane = new Cibo('Scatoletta', 'imgcane.png', 25.55, $categoryCane, '01/01/2023', 10, ['Maiale', 'Pollo', 'Vitello']);
 var_dump($ciboCane);
 
-$ciboGatto = new Cibo('Croccantini', 'imggatto.png', 20.10, $categoryGatto, '01/01/2023', 5, ['Verdure', 'Pesce']);
-var_dump($ciboCane);
+$ciboGatto = new Cibo('Croccantini', 'imggatto.png', -5, $categoryGatto, '01/01/2023', 5, ['Verdure', 'Pesce']);
+var_dump($ciboGatto);
 
 $giocoCane = new Gioco('Pallina di gomma', 'imgpallina.png', 10.20, $categoryCane, '10x10', ['gomma']);
 var_dump($giocoCane);
